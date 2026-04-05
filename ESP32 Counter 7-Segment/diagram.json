@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "author": "Hung",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -105.6, "left": 4.84, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_inc",
+      "top": -115.6,
+      "left": 266,
+      "rotate": 270,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_dec",
+      "top": -19.6,
+      "left": 266,
+      "rotate": 270,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_rst",
+      "top": 66.8,
+      "left": 266,
+      "rotate": 270,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-7segment",
+      "id": "seg",
+      "top": -119.82,
+      "left": 197.08,
+      "attrs": { "common": "cathode" }
+    }
+  ],
+  "connections": [
+    [ "esp:14", "btn_inc:1.l", "green", [ "h-19.05", "v76.8", "h268.8", "v-163.2" ] ],
+    [ "btn_inc:2.l", "esp:GND.1", "black", [ "v211.2", "h-297.55" ] ],
+    [ "esp:12", "btn_dec:1.l", "green", [ "h-9.45", "v76.8", "h268.8", "v-76.8" ] ],
+    [ "btn_dec:2.l", "esp:GND.1", "black", [ "v115.2", "h-297.55" ] ],
+    [ "esp:5", "btn_rst:1.l", "green", [ "h9.6", "v124.8", "h172.8" ] ],
+    [ "btn_rst:2.l", "esp:GND.1", "black", [ "v28.8", "h-297.55" ] ],
+    [ "esp:23", "seg:A", "red", [ "h52.84", "v-67.2", "h71.96" ] ],
+    [ "esp:22", "seg:B", "red", [ "h43.24", "v-86.4", "h91.16" ] ],
+    [ "esp:21", "seg:C", "red", [ "h100.84", "h23.96" ] ],
+    [ "esp:19", "seg:D", "red", [ "h91.24", "h14.36" ] ],
+    [ "esp:18", "seg:E", "red", [ "h96", "v-48" ] ],
+    [ "esp:4", "seg:F", "red", [ "h62.44", "v-163.2", "h43.16" ] ],
+    [ "esp:2", "seg:G", "red", [ "h72.04", "v-279.42" ] ],
+    [ "seg:COM", "esp:GND.2", "black", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
