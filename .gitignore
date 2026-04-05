@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+*.log
+.env
+
+./Dự án thu thập dữ liệu ESP32 ghi vào google sheet File/*
+./Paper 2026 Code/*
+ESP32 Counter 7-Segment/ESP32-Counter-7-Segment.pptx
