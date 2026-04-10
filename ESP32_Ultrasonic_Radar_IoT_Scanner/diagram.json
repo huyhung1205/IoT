@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "author": "RadarScan360",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-v1",
+      "id": "esp32",
+      "top": -69.92,
+      "left": 14.4,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": -117.2,
+      "left": 220.8,
+      "attrs": {
+        "horn": "single"
+      }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "hcsr04",
+      "top": 49.5,
+      "left": 226.3,
+      "attrs": {
+        "distance": "50"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp32:5V",
+      "servo1:V+",
+      "red",
+      []
+    ],
+    [
+      "esp32:GPIO18",
+      "servo1:PWM",
+      "orange",
+      []
+    ],
+    [
+      "esp32:5V",
+      "hcsr04:VCC",
+      "red",
+      []
+    ],
+    [
+      "esp32:GPIO5",
+      "hcsr04:TRIG",
+      "blue",
+      []
+    ],
+    [
+      "esp32:GPIO4",
+      "hcsr04:ECHO",
+      "green",
+      []
+    ],
+    [
+      "servo1:GND",
+      "esp32:GND.1",
+      "black",
+      [
+        "h-57.6",
+        "v144",
+        "h28.8"
+      ]
+    ],
+    [
+      "hcsr04:GND",
+      "esp32:GND.1",
+      "black",
+      [
+        "v28.8",
+        "h-164.4",
+        "v-96"
+      ]
+    ],
+    [
+      "esp32:VIN",
+      "servo1:V+",
+      "red",
+      [
+        "h-19.2",
+        "v-86.4",
+        "h0",
+        "v-86.4",
+        "h144",
+        "v28.8"
+      ]
+    ],
+    [
+      "esp32:D18",
+      "servo1:PWM",
+      "orange",
+      [
+        "h18.71",
+        "v-57.6"
+      ]
+    ],
+    [
+      "esp32:VIN",
+      "hcsr04:VCC",
+      "red",
+      [
+        "h-19.2",
+        "v96",
+        "h297.6",
+        "v9.6"
+      ]
+    ],
+    [
+      "esp32:D5",
+      "hcsr04:TRIG",
+      "magenta",
+      [
+        "h18.71",
+        "v144",
+        "h172.8"
+      ]
+    ],
+    [
+      "esp32:D4",
+      "hcsr04:ECHO",
+      "cyan",
+      [
+        "h28.31",
+        "v105.6",
+        "h172.8"
+      ]
+    ]
+  ],
+  "dependencies": {}
+}

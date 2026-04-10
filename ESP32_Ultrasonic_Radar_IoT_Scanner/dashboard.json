@@ -1,0 +1,118 @@
+{
+  "title": "Radar Scan",
+  "image": null,
+  "mobileHide": false,
+  "mobileOrder": null,
+  "configuration": {
+    "description": "",
+    "widgets": {
+      "a7e354ca-152c-675e-1938-52335cbb1f65": {
+        "typeFullFqn": "tenant.radar",
+        "type": "latest",
+        "sizeX": 7.5,
+        "sizeY": 3,
+        "config": {
+          "datasources": [
+            {
+              "type": "device",
+              "name": "",
+              "deviceId": "3aba3080-33d4-11f1-971b-83c0a6dd70cf",
+              "dataKeys": [
+                {
+                  "name": "angle",
+                  "type": "timeseries",
+                  "label": "angle",
+                  "color": "#2196f3",
+                  "settings": {}
+                },
+                {
+                  "name": "distance",
+                  "type": "timeseries",
+                  "label": "distance",
+                  "color": "#4caf50",
+                  "settings": {}
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              }
+            }
+          ],
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {},
+          "title": "Radar",
+          "decimals": null
+        },
+        "row": 0,
+        "col": 0,
+        "id": "a7e354ca-152c-675e-1938-52335cbb1f65"
+      }
+    },
+    "states": {
+      "default": {
+        "name": "RadarScan360",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "a7e354ca-152c-675e-1938-52335cbb1f65": {
+                "sizeX": 25,
+                "sizeY": 7,
+                "row": 0,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "layoutType": "default",
+              "backgroundColor": "#eeeeee",
+              "columns": 24,
+              "margin": 10,
+              "outerMargin": true,
+              "backgroundSizeMode": "100%",
+              "minColumns": 24,
+              "viewFormat": "grid",
+              "autoFillHeight": false,
+              "rowHeight": 70,
+              "mobileAutoFillHeight": false,
+              "mobileRowHeight": 70
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {},
+    "filters": {},
+    "timewindow": {
+      "selectedTab": 0,
+      "realtime": {
+        "realtimeType": 0,
+        "timewindowMs": 3600000
+      },
+      "aggregation": {
+        "type": "NONE",
+        "limit": 50000
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": true,
+      "showDashboardsSelect": true,
+      "showEntitiesSelect": true,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": true,
+      "titleColor": "rgba(26, 0, 255, 0.87)",
+      "showDashboardLogo": false,
+      "hideToolbar": false,
+      "showFilters": true,
+      "showUpdateDashboardImage": true
+    }
+  },
+  "name": "Radar Scan",
+  "resources": []
+}

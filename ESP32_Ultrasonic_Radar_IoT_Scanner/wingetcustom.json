@@ -1,0 +1,60 @@
+{
+  "widget": {
+    "typeFullFqn": "tenant.radar",
+    "type": "latest",
+    "sizeX": 7.5,
+    "sizeY": 3,
+    "config": {
+      "datasources": [
+        {
+          "type": "device",
+          "name": "",
+          "deviceId": "3aba3080-33d4-11f1-971b-83c0a6dd70cf",
+          "dataKeys": [
+            {
+              "name": "angle",
+              "type": "timeseries",
+              "label": "angle",
+              "color": "#2196f3",
+              "settings": {}
+            },
+            {
+              "name": "distance",
+              "type": "timeseries",
+              "label": "distance",
+              "color": "#4caf50",
+              "settings": {}
+            }
+          ],
+          "alarmFilterConfig": {
+            "statusList": [
+              "ACTIVE"
+            ]
+          }
+        }
+      ],
+      "showTitle": true,
+      "backgroundColor": "#fff",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "padding": "8px",
+      "settings": {},
+      "title": "Radar",
+      "decimals": null
+    },
+    "row": 0,
+    "col": 0,
+    "id": "a7e354ca-152c-675e-1938-52335cbb1f65"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {},
+    "targetDeviceAlias": null
+  },
+  "filtersInfo": {
+    "datasourceFilters": {}
+  },
+  "originalSize": {
+    "sizeX": 25,
+    "sizeY": 7
+  },
+  "originalColumns": 24
+}
