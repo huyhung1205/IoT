@@ -1,4 +1,4 @@
-RadarScan360 — ESP32 Ultrasonic IoT Radar (HC-SR04 + Servo + ThingsBoard Cloud)
+# RadarScan360 — ESP32 Ultrasonic IoT Radar (HC-SR04 + Servo + ThingsBoard Cloud)
 
 Hệ thống “Radar IoT” quét **180°** bằng **Servo** và đo vật cản bằng **cảm biến siêu âm HC-SR04**, sau đó **stream dữ liệu thời gian thực qua MQTT** lên **ThingsBoard Cloud** để **giám sát từ xa trên Dashboard**.
 
@@ -285,18 +285,3 @@ Lưu ý:
 - **Quản lý thiết bị**: device/token, attributes, telemetry rõ ràng.
 - **Mở rộng dễ**: rule engine/cảnh báo/lưu trữ/đa thiết bị khi nâng cấp dự án.
 - **Cloud tiện demo**: truy cập mọi nơi, phù hợp bài thuyết trình/triển khai nhanh.
-
----
-
-## 10) Troubleshooting nhanh
-
-- **Không kết nối WiFi**: kiểm tra SSID/PASSWORD, nguồn cấp, khoảng cách AP.
-- **Không connect ThingsBoard**: kiểm tra `TOKEN`, host/port, firewall mạng.
-- **Servo rung/giật**: dùng nguồn 5V rời cho servo, nối mass chung, thêm tụ lọc.
-- **Distance luôn -1**: kiểm tra wiring TRIG/ECHO, vật cản quá gần/xa, góc đặt cảm biến.
-
----
-
-## 11) Tài liệu thuyết trình
-
-- Slide + kịch bản 3 người thuyết trình: `docs/presentation.md`
